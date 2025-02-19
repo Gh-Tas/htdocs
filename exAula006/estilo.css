@@ -17,7 +17,8 @@ header{
 
 article{
     width: 500px;
-    padding: 50px;
+    padding: 100px;
+    height: 600px;
     background-color: aliceblue;
     border: 1px solid black;
     border-radius: 20px;
