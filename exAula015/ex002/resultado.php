@@ -1,7 +1,7 @@
 <?php
     if ($_SERVER['REQUEST_METHOD'] === "POST") {
         $numeros = $_POST['numeros'];
-
+        var_dump($numeros); //mostrando que a variável numeros é um vetor/array
         $negativos=0;
         $positivos=0;
         $inpares=0;

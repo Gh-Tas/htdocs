@@ -2,6 +2,8 @@
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nomes = $_POST["nomes"];
     $notas = $_POST["notas"];
+    var_dump($nomes); //mostrando que as variáveis nomes e notas são vetores/arrays
+    var_dump($notas);
 
     $alunos = [];
     $somaNotas = 0;

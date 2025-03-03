@@ -9,8 +9,8 @@
     <h1>escreva 10 números abaixo</h1>    
     <form action="resultado.php" method="post">
     <?php for ($i = 0; $i < 10; $i++): ?>
-    <label for="numero<?= $i ?>">Número <?= $i ?>:</label>
-    <input type="number" name="numeros[]" id="numero<?= $i ?>" required><br><br>
+    <label for="numero<?= $i ?>">Número <?php echo $i; ?>:</label>
+    <input type="number" name="numeros[]" id="numero<?php echo $i; ?>" required><br><br>
     <?php endfor; ?>
     <button type="submit">Enviar</button>
     </form>

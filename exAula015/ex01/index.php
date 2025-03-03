@@ -11,10 +11,10 @@
     <h1>insira os dados dos alunos abaixo</h1>
     <form action="nota.php" method="post">
         <?php for ($i = 0; $i < 10; $i++):?>
-            <label for="nome <?= $i ?>">Aluno <? $i + 1 ?></label>
+            <label for="nome <?php echo $i; ?>">Aluno <?php echo $i + 1; ?></label>
             <input type="text" name="nomes[]" id="nome <?= $i ?>" required>
-            <label for="notas <?= $i ?>">Nota <? $i + 1 ?></label>
-            <input type="number" name="notas[]" id="notas <?= $i ?>" step="0.01">
+            <label for="notas <?php echo $i; ?>">Nota <?php echo $i + 1; ?></label>
+            <input type="number" name="notas[]" id="notas <?php echo $i; ?>" step="0.01">
         <?php endfor; ?>
         <input type="submit" value="Enviar">
     </form>
