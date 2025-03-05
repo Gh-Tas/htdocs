@@ -13,11 +13,11 @@
     <form action="calc.php" method="post">
         <?php for ($i = 0; $i < 10; $i++): ?>
             <label for="vetorA<?php echo $i; ?>">Valor<?php echo " " . $i + 1; ?></label>
-            <input type="number" name="vetorA[]" id="vetorA<?php echo $i; ?>">
+            <input type="number" name="vetorA[]" id="vetorA<?php echo $i; ?>"><br><br><br>
         <?php endfor; ?>
         <?php for ($i = 0; $i < 10; $i++): ?>
             <label for="vetorB<?php echo $i; ?>">Valor<?php echo " " . $i + 1; ?></label>
-            <input type="number" name="vetorB[]" id="vetorB<?php echo $i; ?>">
+            <input type="number" name="vetorB[]" id="vetorB<?php echo $i; ?>"><br><br>
         <?php endfor; ?>
         <input type="submit" value="Multiplicar">
     </form>
